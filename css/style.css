@@ -57,12 +57,12 @@ h1 {
   color: #fff;
   font-weight: bold;
   border: 1px solid #fff;
-  border-radius: 2px;
+  border-radius: 5px;
   margin-top: 20px;
 }
 
 .btn-design:hover {
-  border: 1px solid #fff;
+  border: 1px solid #f7e0e0;
 }
 
 .btn-design:active {
