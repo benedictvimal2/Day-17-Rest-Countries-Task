@@ -13,7 +13,7 @@ fetch('https://restcountries.com/v3.1/all').then(d => d.json()).then(result => {
 
     result.forEach(d => {
         
-        const countryName = d.name.official;
+        const countryName = d.name.common;
         const lat = d.latlng[0];
         const lon = d.latlng[1];
 
@@ -40,7 +40,7 @@ fetch('https://restcountries.com/v3.1/all').then(d => d.json()).then(result => {
 
 
 
-        cardHeader.innerHTML = d.name.official;
+        cardHeader.innerHTML = d.name.common;
         cardBody.innerHTML = `<img src="${d.flags.png}" class="card-img-top" alt="Country Flag" /><div>Capital: ${d.capital}</div><div class="card-text">Region: ${d.region}</div><div>Latitude: ${d.latlng[0]}</div><div>Longitude: ${d.latlng[1]}</div><div>Country Code: ${d.region}</div>`;
 
         //Creating the button and appending it to cardBody
